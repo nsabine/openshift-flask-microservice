@@ -11,7 +11,7 @@ log = logging.getLogger(__name__)
 app = Flask(__name__)
 
 @app.route('/config')
-def hello():
+def config():
     return jsonify({
         'host_name': HOST_NAME,
         'build_name': BUILD_NAME,
